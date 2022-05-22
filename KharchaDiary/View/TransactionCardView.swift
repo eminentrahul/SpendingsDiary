@@ -47,7 +47,9 @@ struct TransactionCardView: View {
         .padding()
         .background {
             RoundedRectangle(cornerRadius: 15, style: .continuous)
-                .fill(.white)
+                .fill(
+                    .linearGradient(colors: [Color("gradient1").opacity(0.3), Color("gradient2").opacity(0.2)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                )
         }
     }
 }
