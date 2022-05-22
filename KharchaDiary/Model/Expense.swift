@@ -26,10 +26,10 @@ enum ExpenseType : String {
 }
 
 var sampleExpenses : [Expense] = [
-    Expense(remark: "Salary", amount: 25999, date: Date(timeIntervalSince1970: 1689374987), type: .INCOME, color: "Yellow"),
-    Expense(remark: "Cooler", amount: 12999, date: Date(timeIntervalSince1970: 1689374393), type: .EXPENCE, color: "Green"),
-    Expense(remark: "Mugga", amount: 999, date: Date(timeIntervalSince1970: 1689374987), type: .EXPENCE, color: "Purple"),
-    Expense(remark: "Beddsheet", amount: 2999, date: Date(timeIntervalSince1970: 1689374987), type: .EXPENCE, color: "Red"),
-    Expense(remark: "Pillow", amount: 259, date: Date(timeIntervalSince1970: 1689374987), type: .EXPENCE, color: "Teal"),
+    Expense(remark: "Salary", amount: 25999, date: Date(timeIntervalSince1970: 1689374987), type: .INCOME, color: "cyan"),
+    Expense(remark: "Cooler", amount: 12999, date: Date(timeIntervalSince1970: 1689374393), type: .EXPENCE, color: "green"),
+    Expense(remark: "Mugga", amount: 999, date: Date(timeIntervalSince1970: 1689374987), type: .EXPENCE, color: "maroon"),
+    Expense(remark: "Beddsheet", amount: 2999, date: Date(timeIntervalSince1970: 1689374987), type: .EXPENCE, color: "red"),
+    Expense(remark: "Pillow", amount: 259, date: Date(timeIntervalSince1970: 1689374987), type: .EXPENCE, color: "yellow"),
 
 ]

@@ -16,7 +16,7 @@ struct Home: View {
             VStack(spacing: 12) {
                 HStack(spacing: 15) {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Swagatam")
+                        Text("Welcome!")
                             .font(.caption)
                             .fontWeight(.semibold)
                             .foregroundColor(.gray)
@@ -43,13 +43,32 @@ struct Home: View {
 
                 }
                 ExpenseCardView()
+                TransactionView()
             }
             .padding()
         }
         .background{
-            Color(uiColor: .lightGray)
+            Color("background")
                 .ignoresSafeArea()
         }
+    }
+    
+    //MARK: - Transaction Card View
+    @ViewBuilder
+    func TransactionView() -> some View {
+        VStack (spacing: 15) {
+            Text("Transaction")
+                .font(.title2.bold())
+                .opacity(0.2)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+        //MARK: - Transaction Card View
+            ForEach(expenseViewModel.expenses) { expense in
+                TransactionCardView(expense: expense)
+                    .environmentObject(expenseViewModel)
+            }
+        }//VStack
+        .padding(.top)
     }
     
     //MARK: Expense Gradient Card view
@@ -59,9 +78,8 @@ struct Home: View {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .fill(
                     .linearGradient(colors: [
-                        Color.blue,
-                        Color.red,
-                        Color.brown
+                        Color("gradient1"),
+                        Color("gradient3")
                     ], startPoint: .topLeading, endPoint: .bottomTrailing)
                 )
             
