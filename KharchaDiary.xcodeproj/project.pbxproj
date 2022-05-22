@@ -14,6 +14,9 @@
 		0F9FBC94283A5158001CB397 /* KharchaDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FBC93283A5158001CB397 /* KharchaDiaryTests.swift */; };
 		0F9FBC9E283A5158001CB397 /* KharchaDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FBC9D283A5158001CB397 /* KharchaDiaryUITests.swift */; };
 		0F9FBCA0283A5158001CB397 /* KharchaDiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FBC9F283A5158001CB397 /* KharchaDiaryUITestsLaunchTests.swift */; };
+		0F9FBCB0283A51AF001CB397 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FBCAF283A51AF001CB397 /* Home.swift */; };
+		0FB818CD283A526600806C6C /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB818CC283A526600806C6C /* Expense.swift */; };
+		0FB818CF283A547C00806C6C /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB818CE283A547C00806C6C /* ExpenseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		0F9FBC99283A5158001CB397 /* KharchaDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KharchaDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9FBC9D283A5158001CB397 /* KharchaDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KharchaDiaryUITests.swift; sourceTree = "<group>"; };
 		0F9FBC9F283A5158001CB397 /* KharchaDiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KharchaDiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F9FBCAF283A51AF001CB397 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0FB818CC283A526600806C6C /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		0FB818CE283A547C00806C6C /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		0F9FBC81283A5156001CB397 /* KharchaDiary */ = {
 			isa = PBXGroup;
 			children = (
+				0F9FBCAE283A518E001CB397 /* ViewModel */,
+				0F9FBCAD283A5181001CB397 /* Model */,
+				0F9FBCAC283A5179001CB397 /* View */,
 				0F9FBC82283A5156001CB397 /* KharchaDiaryApp.swift */,
 				0F9FBC84283A5156001CB397 /* ContentView.swift */,
 				0F9FBC86283A5157001CB397 /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				0F9FBC9F283A5158001CB397 /* KharchaDiaryUITestsLaunchTests.swift */,
 			);
 			path = KharchaDiaryUITests;
+			sourceTree = "<group>";
+		};
+		0F9FBCAC283A5179001CB397 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F9FBCAF283A51AF001CB397 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F9FBCAD283A5181001CB397 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FB818CC283A526600806C6C /* Expense.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F9FBCAE283A518E001CB397 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0FB818CE283A547C00806C6C /* ExpenseViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB818CD283A526600806C6C /* Expense.swift in Sources */,
 				0F9FBC85283A5156001CB397 /* ContentView.swift in Sources */,
+				0F9FBCB0283A51AF001CB397 /* Home.swift in Sources */,
+				0FB818CF283A547C00806C6C /* ExpenseViewModel.swift in Sources */,
 				0F9FBC83283A5156001CB397 /* KharchaDiaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
