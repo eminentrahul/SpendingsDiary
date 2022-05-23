@@ -105,7 +105,7 @@ struct AddNewExpense: View {
             .frame(maxHeight: .infinity, alignment: .center)
             
             //MARK: Save Button
-            Button (action: expenseViewModel.saveData) {
+            Button (action: {expenseViewModel.saveData(env: env)}) {
                 Text("Save")
                     .font(.title3)
                     .fontWeight(.semibold)

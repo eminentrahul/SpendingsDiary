@@ -80,7 +80,18 @@ class ExpenseViewModel: ObservableObject {
     }
     
     //MARK: Save Data
-    func saveData() {
+    func saveData(env: EnvironmentValues) {
         print("Saved")
+        let amount = (amount as NSString).doubleValue
+        let colors = ["green", "cyan", "maroon", "orange", "red", "yellow"]
+        let expense = Expense(remark: remark, amount: amount, date: date, type: type, color: colors.randomElement() ?? "red")
+        withAnimation {
+            expenses.append(expense)
+        }
+        expenses = expenses.sorted(by: {first, second in
+            return second.date < first.date
+        })
+        
+        env.dismiss()
     }
 }
