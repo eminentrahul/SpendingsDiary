@@ -1,0 +1,2 @@
+# SpendingsDiary
+Expenditure assesment.
