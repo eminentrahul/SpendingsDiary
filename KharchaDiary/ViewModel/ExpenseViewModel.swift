@@ -20,6 +20,13 @@ class ExpenseViewModel: ObservableObject {
     //MARK: Filter View
     @Published var showFilterView = false
     
+    //MARK: Add New expense property
+    @Published var addNewExpense: Bool = false
+    @Published var amount: String = ""
+    @Published var date: Date = Date()
+    @Published var remark: String = ""
+    @Published var type: ExpenseType = .ALL
+    
     init() {
         //MARK: Get Current Month starting datte
         let calendar = Calendar.current
@@ -62,5 +69,18 @@ class ExpenseViewModel: ObservableObject {
     //MARK: Convert Dates to String
     func convertDateToString() -> String {
         return startDate.formatted(date: .abbreviated, time: .omitted) + " - " + endDate.formatted(date: .abbreviated, time: .omitted)
+    }
+    
+    //MARK:  Clear all data
+    func clearAllData() {
+        date = Date()
+        type = .ALL
+        remark = ""
+        amount = ""
+    }
+    
+    //MARK: Save Data
+    func saveData() {
+        print("Saved")
     }
 }

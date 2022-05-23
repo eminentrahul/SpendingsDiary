@@ -10,6 +10,7 @@
 		0F03F616283A6E75005ADA55 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03F615283A6E75005ADA55 /* TransactionCardView.swift */; };
 		0F03F618283AA012005ADA55 /* FilteredDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03F617283AA012005ADA55 /* FilteredDetailView.swift */; };
 		0F03F61A283AA4C8005ADA55 /* ExpenseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03F619283AA4C8005ADA55 /* ExpenseCardView.swift */; };
+		0F03F61C283B3490005ADA55 /* AddNewExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03F61B283B3490005ADA55 /* AddNewExpense.swift */; };
 		0F9FBC83283A5156001CB397 /* KharchaDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FBC82283A5156001CB397 /* KharchaDiaryApp.swift */; };
 		0F9FBC85283A5156001CB397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FBC84283A5156001CB397 /* ContentView.swift */; };
 		0F9FBC87283A5157001CB397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F9FBC86283A5157001CB397 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		0F03F615283A6E75005ADA55 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		0F03F617283AA012005ADA55 /* FilteredDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredDetailView.swift; sourceTree = "<group>"; };
 		0F03F619283AA4C8005ADA55 /* ExpenseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCardView.swift; sourceTree = "<group>"; };
+		0F03F61B283B3490005ADA55 /* AddNewExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewExpense.swift; sourceTree = "<group>"; };
 		0F9FBC7F283A5156001CB397 /* KharchaDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KharchaDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9FBC82283A5156001CB397 /* KharchaDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KharchaDiaryApp.swift; sourceTree = "<group>"; };
 		0F9FBC84283A5156001CB397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				0F03F615283A6E75005ADA55 /* TransactionCardView.swift */,
 				0F03F617283AA012005ADA55 /* FilteredDetailView.swift */,
 				0F03F619283AA4C8005ADA55 /* ExpenseCardView.swift */,
+				0F03F61B283B3490005ADA55 /* AddNewExpense.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F03F61C283B3490005ADA55 /* AddNewExpense.swift in Sources */,
 				0FB818CD283A526600806C6C /* Expense.swift in Sources */,
 				0F03F618283AA012005ADA55 /* FilteredDetailView.swift in Sources */,
 				0F9FBC85283A5156001CB397 /* ContentView.swift in Sources */,
