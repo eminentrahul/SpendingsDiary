@@ -31,5 +31,6 @@ var sampleExpenses : [Expense] = [
     Expense(remark: "Mugga", amount: 999, date: Date(timeIntervalSince1970: 1652417709), type: .EXPENCE, color: "maroon"),
     Expense(remark: "Beddsheet", amount: 2999, date: Date(timeIntervalSince1970: 1652417709), type: .EXPENCE, color: "red"),
     Expense(remark: "Pillow", amount: 259, date: Date(timeIntervalSince1970: 1653022509), type: .EXPENCE, color: "yellow"),
+    Expense(remark: "Macbook", amount: 2059, date: Date(timeIntervalSince1970: 1653022509), type: .EXPENCE, color: "yellow"),
 
 ]
